@@ -17,6 +17,7 @@ public class LoginActivity extends Activity {
     String login = "test@test.com";
     String password = "password";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,20 +28,21 @@ public class LoginActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.login, menu);
+        getMenuInflater().inflate(R.menu.list_visit_menu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
+        switch (item.getItemId()) {
+
+            case R.id.list_visit_settings:
+
+                finish();
+                break;
         }
-        return super.onOptionsItemSelected(item);
+
+        return true;
     }
 
     public void login(View v) throws Exception {
@@ -50,7 +52,7 @@ public class LoginActivity extends Activity {
         Log.i("testPassword", testpassword.getText().toString());
         if(testlogin.getText().toString().equals(login) && testpassword.getText().toString().equals(password))
         {
-            Intent i = new Intent(this, MainActivity.class);
+            Intent i = new Intent(this, ListVisitActivity.class);
             startActivity(i);
         }
         else

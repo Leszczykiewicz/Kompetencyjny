@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Kompetencyjny</string>
+    <string name="app_name">Asystent Wizyt</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_login"></string>
@@ -12,6 +12,17 @@
     <string name="title_activity_edit_reservation"></string>
     <string name="action_add">Dodaj rezerwację</string>
     <string name="title_activity_add_reservation"></string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Lista wizyt</string>
+    <string name="login_activity">Asystent Wizyt</string>
+
+    <string name="title_visit">Tytuł: </string>
+    <string name="date_visit">Data: </string>
+    <string name="hour_visit">Godzina: </string>
+    <string name="title_activity_details_visit">Wybierz Zdarzenie</string>
+    <string name="removeVisit">Spóźnie się</string>
+    <string name="delayVisit">Odwołuje wizytę</string>
+    <string name="removeVisitMessage">Wizyta opóźniona</string>
+    <string name="delayVisitMessage">Wizyta odwołana</string>
+
 
 </resources>
